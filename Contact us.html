@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html><head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				<link rel="stylesheet" href="https://use.typekit.net/agq6hgm.css">
+
+	
+	<style> 
+		* {
+			font-family: "metalista-web", serif;
+font-weight: 800px;
+font-style: normal;
+		}
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: black;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	
+	}
+
+	.container2 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 60px;
+		padding: 40px;
+		background-color: none;
+		border-radius: 5px;
+		color: white;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 10px;
+		font-size: 1.1em;
+	    color: white;
+		      box-sizing: fill;
+	   	font-family: "vortice-concept", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+	}
+
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		width: 100%;
+		padding: 10px;
+		border: none;
+		border-radius: 5px;
+		margin-bottom: 20px;
+		font-size: 1.1em;
+		      box-sizing: fill;
+	   	font-family: "vortice-concept", sans-serif;
+font-weight: 400;
+font-style: normal;
+	}
+
+	button[type="submit"] {
+		background-color: #fff;
+		color: #0B0000;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		font-size: 1.1em;
+		cursor: pointer;
+		      box-sizing: fill;
+	   	font-family: "vortice-concept", sans-serif;
+font-weight: 400;
+font-style: normal;
+	}
+
+	button[type="submit"]:hover {
+		background-color: #0062cc;
+		      box-sizing: fill;
+	   	font-family: "vortice-concept", sans-serif;
+font-weight: 400;
+font-style: normal;
+	}
+
+
+ul {
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+  left: 48%;
+  transform: translate(-50%, -50%);
+	color: #FFFFFF;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 40px;
+	color: white; 
+	margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+	
+}
+
+ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+	margin-bottom: 30px; 
+}
+
+ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+ul li a:hover:before {
+  top: 0;
+}
+
+ul li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+ul li:nth-child(2) a:before{
+  background: #55acee;
+}
+
+ul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+ul li:nth-child(4) a:before {
+  background: #dd4b39;
+}
+	
+	.social-media-icons {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+		margin-bottom: 50px;
+}
+
+.social-media-icons a {
+	margin-right: 10px;
+	font-size: 1.5em;
+	color: #555;
+	transition: color 0.3s ease;
+}
+
+.social-media-icons a:hover {
+	color: #007bff;
+}
+
+	
+		/* Create a top navigation bar with a black background color  */
+.topnav {
+  background-color: none;
+  overflow: hidden;
+	font-size: 30px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+		font-size: 30px;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: right;
+  background-color: none;
+  color: white;
+		font-weight: 300px;
+
+}
+		
+	</style>
+</head>
+<body>
+	
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	
+<div class="topnav">
+  <a href="Merchpage.html">Merch</a>
+    <a href="the band1.html">The Band</a>
+  <a href="Contact us.html">Contact us</a>
+  <a href="Music.html" class="split">Music</a>
+</div>
+
+	<div class="container2">
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="name" required>
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" required>
+			<label for="message">Message:</label>
+			<textarea name="message" id="message" required></textarea>
+			<button type="submit">Submit</button>  
+		</form>
+	</div>
+	
+		
+<div class="social-media-icons">
+<ul>
+  <li>
+    <a href="https://www.facebook.com/10yearsmusic/" target="_blank">
+      <i class="fab fa-facebook-f icon"></i>  </a> </li>
+  <li>
+    <a href="https://twitter.com/10years?lang=en" target="_blank"><i class="fab fa-twitter icon"></i></a> </li>
+  <li>
+    <a href="https://www.youtube.com/channel/UCfZE-ZIx11-4ZRb2SnSoFDw" target="_blank"><i class="fab fa-youtube icon"></i></a></li> <li>
+    <a href="https://www.instagram.com/10yearsmusic/?hl=en" target="_blank"><i class="fab fa-instagram icon"></i></a></li>
+</ul>
+	</div>
+</body>
+</html>

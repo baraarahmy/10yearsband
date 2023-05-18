@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carousel</title>
+	
+	<link rel="stylesheet" href="https://use.typekit.net/agq6hgm.css">
+	<style>
+		
+		 * {
+            box-sizing: fill;
+					background-color: black;
+		
+
+
+        }
+			header	{
+				font-family: "vortice-concept", sans-serif;
+font-weight: 150px;
+font-style: normal;
+	background-color: none;
+	margin-top: 30px;
+	margin-right: 30px;
+	margin-bottom: 100px;
+	margin-left: 40px;
+	word-spacing: normal;
+}
+       
+
+    body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+	}
+	body {
+            margin: 10px 30px 30px 30px;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+		}
+			
+			  .container2 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        header {
+			height: 120px;
+            background-color: none;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+			bottom: 50px;
+            z-index: 999;
+			font-family: "vortice-concept", sans-serif;
+font-size: 22px;
+font-style: normal;
+        }
+
+        .logo {
+			float: left;
+			margin-top: 120px;
+            margin: 20px 0;
+			height: 60px; 
+			width: 60px; 
+        }
+
+        nav {
+            float: right;
+            margin: 20px 0;
+			margin-bottom: 50px;
+			color: #F8F9FA;
+			font-family: "vortice-concept", sans-serif;
+font-size: 22px;
+font-style: normal;
+
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+			color: #F8F9FA;
+			font-family: "vortice-concept", sans-serif;
+font-size: 22px;
+font-style: normal;
+
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 40px;
+			padding:20px; 
+			color: #F8F9FA;
+font-family: "vortice-concept", sans-serif;
+font-size: 22px;
+font-style: normal;
+        }
+
+     
+	.box    { 
+		 display: flex;
+		justify-content: center;
+		 margin: 80px 50px 50px 50px;
+	}
+	
+		
+			.container2 {
+  overflow-x: scroll;
+  white-space: normal;
+    margin-top: 80px 120px 120px 120px;
+}
+
+		.image-wrapper {
+  height: 300px;
+  width: 450px;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+img {
+  height: 300px;
+  width: 450px;
+  object-fit: cover;
+  object-position: top;
+  transition: all 200ms ease-in-out;
+}
+
+.wrapper:hover img {
+  transform: scale(2);
+}
+
+.wrapper:hover .image-wrapper {
+  width: 800px;
+}
+
+.page {
+  display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+  width: 100%;
+	height: 300px;
+	
+}
+
+.box {
+  display: flex;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+		
+		.left {margin-right: 30px;}
+		
+		.right {margin-right: 30px;}
+		
+		.center {margin-right: 30px;
+		margin-left: 30px;}
+
+		.wrapper {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 50px 0;
+  
+  display: flex;
+  flex-direction: row;
+  
+  transition: all 200ms ease-in-out;
+			 font-family: "metalista-web", serif;
+font-size: 20px;
+font-style: normal;
+			align-content: center;
+			align-items: center; 
+}
+
+.image-wrapper {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: all 200ms ease-in-out;
+	 font-family: "metalista-web", serif;
+font-weight: 500;
+font-style: normal;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  object-position: top;
+  
+  transition: all 200ms ease-in-out;
+}
+
+.book-design-image {
+  object-position: center;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  left: 25px;
+	align-content: center;
+	align-items: center;
+  transition: all 200ms ease-in-out;
+  overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+h1 {
+	  position: relative; 
+  bottom: 0;
+	text-align: center;
+	text-overflow: inherit;
+  height: 50px;
+  color: #fff; 
+  transition: all 200ms ease-in-out;
+}
+
+.wrapper:hover img {
+  transform: scale(2);
+  /*object-position: bottom;*/
+}
+
+.wrapper:hover h1 {
+  bottom: 150px;
+  transform: scale(0.5);
+	 font-family: "metalista-web", serif;
+font-weight: 500;
+font-style: normal;
+}
+
+.wrapper:hover .image-wrapper {
+  width: 400px;
+		}
+		
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px; 
+	
+}
+
+
+/* Centered section inside the top navigation */
+.topnav-centered a {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	font-weight: 200;
+ 
+}
+
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  
+}
+		
+		.topnav-centered a img {
+  width: 70px;
+  height: 70px;
+		
+}
+		
+		::-webkit-scrollbar {
+    display: none;
+}
+	</style>
+<script> 
+	const pages = document.querySelectorAll('.page');
+let currentPage = 0;
+
+function showPage(n) {
+  if (n < 0 || n >= pages.length) return;
+  pages[currentPage].classList.remove('active');
+  currentPage = n;
+  pages[currentPage].classList.add('active');
+}
+
+function next() {
+  showPage(currentPage + 1);
+}
+
+function prev()
+
+	</script></head>
+<body>
+
+	<header>
+		
+		<!-- Top navigation -->
+<div class="topnav">
+
+  <!-- Centered link -->
+  <div class="topnav-centered">
+	    <a href="Homepage.html" class="active"><img src="visuals/lolo.png" alt="Logo" width="30" height="30"></a>
+
+  </div>
+
+  <!-- Left-aligned links (default) -->
+  <a href="Music.html">Music</a>
+  <a href="Merchpage.html">Merch</a>
+
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <a href="the band1.html">The Band</a>
+    <a href="Contact us.html">Contact Us</a>
+  </div>
+
+</div>
+     
+    </header>
+	
+	<div class="container2">
+		<div class="page" id="page1"> 
+			<section class="box">
+		<div class="wrapper">
+				<div class="left"> 
+						<div class="image-wrapper"> 
+					<a href="division.html">  
+						<img src="visuals/6BADDD42-7E66-4627-B33C-CA824C19683D.jpeg" width="200" height="200" alt="">
+					</a> </div>
+						<div class="header-wrapper">
+    <h1>Division</h1>
+  </div>
+				</div>
+						</div>
+				
+				
+				
+								<div class="center"> 
+				<div class="wrapper">
+				<div class="left"> 
+						<div class="image-wrapper"> 
+					<a href="Album playlist page.html">  
+						<img src="visuals/59CE104C-2FDF-4C03-9F64-29A692C05B4D.png" width="200" height="200" alt="">
+					</a> </div>
+						<div class="header-wrapper">
+    <h1>Deconstructed</h1>
+  </div>
+				</div>
+						</div>
+				</div>
+				
+				
+					<div class="right"> 
+				<div class="wrapper">
+				<div class="left"> 
+						<div class="image-wrapper"> 
+					<a href="live performance thing.html">  
+						<img src="visuals/3062E61A-A6F0-4105-83CE-784CAE34619F.png" width="200" height="200" alt="">
+					</a> </div>
+						<div class="header-wrapper">
+    <h1>Live</h1>
+  </div>
+				</div>
+						</div>
+				</div>
+				
+			</section>
+		</div>
+		
+		<div class="page" id="page2"> 
+			<section class="box">
+				
+				<div class="wrapper">
+				<div class="left"> 
+						<div class="image-wrapper"> 
+					<a href="how to live as ghosts.html">  
+						<img src="visuals/6B3E15D3-4CBA-4059-A540-416AF202C452.jpeg"width="200" height="200" alt=""> 
+					</a> </div>
+						<div class="header-wrapper">
+    <h1>How to live as ghosts</h1>
+  </div>
+				</div>
+						</div>
+				
+			
+						
+								<div class="center"> 
+				<div class="wrapper">
+				<div class="left"> 
+						<div class="image-wrapper"> 
+					<a href="violent allies.html">  
+						<img src= "visuals/43EA6885-5DEE-4032-B7AD-E59727D71A8D.jpeg" width="200" height="200" alt=""> 
+					</a> </div>
+						<div class="header-wrapper">
+    <h1>Violent Allies</h1>
+  </div>
+				</div>
+						</div>
+				</div>
+				
+				
+				<div class="right"> 
+				<div class="wrapper">
+				<div class="left"> 
+						<div class="image-wrapper"> 
+					<a href="minus the machine.html">  
+						<img src="visuals/C59021D0-16B7-4E26-BA84-5C7235D8F3A7.jpeg" width="200" height="200" alt=""> 
+					</a> </div>
+						<div class="header-wrapper">
+    <h1>Minus the machine</h1>
+  </div>
+				</div>
+						</div>
+				</div>
+			
+			</section>
+		</div>
+		
+		<div class="page" id="page3">
+			<section class="box">
+				
+				<div class="wrapper">
+				<div class="left"> 
+						<div class="image-wrapper"> 
+					<a href="feeding the wolves.html">  
+						<img src="visuals/D9FEF5D7-765A-4AE5-B175-737F52809E38.jpeg" width="200" height="200" alt="">
+					</a> </div>
+						<div class="header-wrapper">
+    <h1>Feeding the wolves</h1>
+  </div>
+				</div>
+						</div>
+				
+				<div class="center"> 
+				<div class="wrapper">
+				<div class="left"> 
+						<div class="image-wrapper"> 
+					<a href="the autmn effect.html">  
+						<img src="visuals/DFC03F95-88BC-4980-8F27-B8C4C627242E.jpeg" width="200" height="200" alt="">
+					</a> </div>
+						<div class="header-wrapper">
+    <h1>The autumn effect</h1>
+  </div>
+				</div>
+						</div>
+				</div>
+				
+				<div class="right"> 
+				<div class="wrapper">
+				<div class="left"> 
+						<div class="image-wrapper"> 
+					<a href="from birth to bruial.html">  
+						<img src="visuals/F57D1642-20C2-4020-B7AE-20D04CCE3DCD.jpeg"width="200" height="200" alt="">
+					</a> </div>
+						<div class="header-wrapper">
+    <h1>From birth to bruial</h1>
+  </div>
+				</div>
+						</div>
+				</div>
+				
+				
+			</section>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
